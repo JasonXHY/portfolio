@@ -752,6 +752,45 @@
     color: var(--text-secondary);
     line-height: 1.8;
   }
+
+  /* ---- Quote Block ---- */
+  .quote-block {
+    margin-top: 32px;
+    padding: 24px 28px;
+    background: #F8F9FB;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    position: relative;
+  }
+  .quote-block::before {
+    content: '“';
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 48px;
+    color: var(--primary);
+    opacity: 0.15;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .quote-block p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text);
+    font-style: italic;
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+  .quote-block .quote-author {
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: normal;
+    padding-left: 24px;
+  }
+  .quote-block .quote-author strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+  }
 </style>
 </head>
 <body>
@@ -788,6 +827,10 @@
       <div class="section-title"><span class="icon">I</span> 关于我</div>
       <div class="story-card" style="border-left-color:var(--primary);">
         <p>7年企业级HR产品交付经验，咨询公司出身，深度参与过万人规模HR系统从0到1上线全流程，擅长在业务需求与系统能力边界间找到最优解。覆盖央国企、制造业、金融等多个行业，熟悉组织快速发展、干部管理合规、跨区域薪酬核算等复杂场景。2026年起以Vibe Coding方式独立落地2款AI桌面应用，累计33,000+行代码，具备多Agent协作编排与AI产品设计经验。</p>
+      </div>
+
+      <div class="story-card" style="border-left-color:var(--accent); margin-top:16px;">
+        <p style="font-size:14px; color:var(--text-secondary); line-height:1.8;"><strong style="color:var(--accent);">产品哲学：给AI完整的上下文。</strong>7年项目交付让我深刻理解：AI的能力上限取决于它能获取的上下文完整度。侧耳倾听解决"AI听不到"——让AI获取完整的会议语音上下文；PMAer解决"AI不知道"——让AI获取完整的项目信息上下文。两个产品，同一个理念：当AI拥有了完整的上下文，它就能真正帮你解决问题。</p>
       </div>
 
       <div class="section-title" style="margin-top:32px;"><span class="icon">W</span> 工作经历</div>
@@ -989,8 +1032,11 @@
             <li>项目文件整理费时，关键信息需要翻无数文档才能找到，新同事入职要花一周时间才能理清项目全貌</li>
             <li>每次项目复盘都说"下次要做好知识沉淀"，但下次还是一样</li>
           </ul>
+          <p>这些痛点背后有一个共同的本质：<strong>信息在流转过程中不断丢失，而AI因为拿不到完整上下文，帮不上忙。</strong></p>
           <p>2026年，两个变化让一切变得不同：国内大模型API价格降到几乎可以忽略不计（DeepSeek、Kimi等），AI编程工具成熟到非程序员也能驾驭。我突然意识到——<strong>我不需要等公司排期开发，我可以自己把想法变成产品。</strong></p>
-          <p>于是我开始了Vibe Coding实践：<strong>我负责定义问题和把控方向，AI负责写代码和审查质量</strong>。不是"用AI写代码"那么简单，而是一种新的工作方式——人做产品经理，AI做开发团队。</p>
+          <p>但我做的第一件事不是写代码，而是想清楚一个问题：<strong>AI到底缺什么？</strong></p>
+          <p>答案很简单：上下文。开会时AI听不到声音，它就无法帮你整理纪要；问项目问题时AI不知道文件在哪，它就无法给你准确答案。AI的能力上限，取决于它能获取的上下文完整度。</p>
+          <p>于是我开始了Vibe Coding实践：<strong>我负责定义问题和把控方向，AI负责写代码和审查质量</strong>。不是"用AI写代码"那么简单，而是一种新的工作方式——人做产品经理，AI做开发团队。两款产品的设计都围绕同一个核心理念：给AI完整的上下文，让它真正帮你解决问题。</p>
           <p>实践下来后，5周做完了侧耳倾听，4周做完了PMAer。两款产品都在真实场景中持续使用，不是demo，是真正解决问题的工具。</p>
         </div>
       </div>
@@ -1159,6 +1205,12 @@
               <tr><td><strong>AI厂商集成</strong></td><td>10+</td><td>11家</td></tr>
             </tbody>
           </table>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote-block">
+          <p>如果说你能够把一个问题描述得很清楚，给它完整的上下文和指令，它已经超过人类了。</p>
+          <div class="quote-author"><strong>梁文峰</strong>（DeepSeek创始人）| 2026年7月</div>
         </div>
       </div>
     </div>
